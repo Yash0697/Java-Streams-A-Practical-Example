@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class EmployeeService {
@@ -70,7 +71,7 @@ public class EmployeeService {
 			System.out.print("\nEnter Last Name of Manager : ");
 			String lName = br.readLine();
 			String name = fName+" "+lName;
-			Integer mgrId = empList.stream().filter(i->
+			Optional<Integer> mgrId = empList.stream().filter(i->
 			{
 				String name1 = i.getFirstName()+" "+i.getLastName();
 				Integer Id = null;
@@ -80,10 +81,15 @@ public class EmployeeService {
 				}
 				return Id != null;
 			}
-			).map(i->i.getEmpId()).findFirst().get();
+			).map(i->i.getEmpId()).findFirst();
+			if(mgrId.isPresent()) {
 			List<String> subList = empList.stream().filter(i->i.getManagerId().equals(mgrId)).map(i->i.getFirstName()+" "+i.getLastName()).collect(Collectors.toList()).stream().sorted().collect(Collectors.toList());
 			System.out.println("Subordinates of "+name+" :");
 			subList.stream().forEach(System.out::println);
+			}
+			else {
+				System.out.println("There is no Employee with name "+name);
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
