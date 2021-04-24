@@ -1,0 +1,9 @@
+1,Ramesh,Kaluvitharana,kalu@gmail.com,5756092345,[2002-02-12],Analyst,50000,12,11,Research,101
+2,Sachin,Tendulkar,sach@gmail.com,5756092346,[1990-02-11],Manager,93000,2,12,Product Development,102
+3,Gundappa,Vishwanath,visi@gmail.com,5756092347,[1972-01-19],Senior Consultant,80000,2,12,Product Development,102
+4,Mahela,Jayawardana,jay@gmail.com,5756092348,[2003-11-21],Senior Developer,78000,12,11,Research,101
+5,Michael,Gough,mitch@gmail.com,5756092349,[1998-03-05],Developer,36000,103,8,IT Services,13
+6,Darren,Lehman,darrlah@gmail.com,5756092351,[1995-02-12],Senior Resource Manager,38000,2,12,Product Development,102
+8,Ricky,Ponting,Punter@gmail.com,5756092352,[2000-11-10],Manager,80000,103,8,IT Services,13
+9,Rahul,Dravid,wall@gmail.com,5756092356,[2001-07-22],Senior Developer,80000,2,12,Product Development,102
+10,Sourav,Ganguly,dada@gmail.com,5756092332,[2001-07-22],Assistant Manager,79000,2,12,Product Development,102
